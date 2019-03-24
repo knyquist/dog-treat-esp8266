@@ -6,5 +6,9 @@ def make_decision(data):
         cmd.led_on()  # turn LED 2 on
     elif data == b'LOFF':
         cmd.led_off()  # turn LED 2 off
+    elif data == b'MFWD':
+        cmd.motor_fwd()
+    elif data == b'MREV':
+        cmd.motor_rev()
     else:
         print('Error: Input data not in allowed commands')
