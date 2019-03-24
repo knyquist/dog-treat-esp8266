@@ -22,3 +22,14 @@ Enter your wifi credentials into ssid.info and transfer that file along with the
 - `b'LOFF'` turns the onboard LED off
 - `b'MFWD'` rotates the connected 28BYJ-48 forward one complete rotation
 - `b'MREV'` rotates the connected 28BYJ-48 reverse one complete rotation
+
+# GPIO Pins
+My current knowlege of the mapping between micropython API pin IDs (left) and labels printed on each thing (right) is below. These may be specific to the particular models I purchased. No guarantees.
+
+|    MicroPython    | Onboard |
+| :---------------: | :-----: |
+| `machine.Pin(0)`  | D0      |
+| `machine.Pin(2)`  | LED     |
+| `machine.Pin(4)`  | D1      |
+| `machine.Pin(5)`  | D2      |
+| `machine.Pin(16)` | D3      |
